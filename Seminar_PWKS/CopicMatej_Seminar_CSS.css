@@ -1,0 +1,309 @@
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.nav_bar button{
+  outline: none;
+  border: none;
+  padding-top:5px;
+}
+
+.nav_bar{
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  background-color: whitesmoke;
+  height: 100px;
+  position: fixed;
+  font-size: 25px;
+  font-weight: bolder;
+  top:0;
+  width: 100%;
+  z-index: 999;
+  padding-left: 12px;
+  padding-top:10px
+}
+
+.menu_box{
+  background-color: whitesmoke;
+  width: 5%;
+  float:right;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 15px;
+  margin-right:10px;
+  border-style:solid;
+  border-color: orange;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: orange;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #000000;
+  background-color: aqua;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity:0.95;
+}
+
+.parallax h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  color:orange;
+  padding-top: 30%;
+  text-shadow:1px 1px #000000;
+  position: absolute;
+  top: 8px;
+}
+
+.cont1{
+  height:250px;
+  text-align: center;
+}
+
+.cont1 h1{
+  font-size:35px;
+  color:orange;
+  padding-top:100px;
+}
+
+.cont2{
+  overflow: hidden;
+  height:500px;
+}
+
+.cont2_aside{
+  width: 65%;
+  height:500px;
+  float:right;
+  position:static;
+}
+
+.cont2_nav{
+  width:34%;
+  float:left;
+  padding-left: 10px;
+}
+
+.cont3{
+  margin-top: 160px;
+  height:500px;
+  background-repeat: no-repeat;
+}
+
+.cont3_desni{
+  width: 30%;
+  font-size: 20px;
+  float:right;
+  color:rgb(4, 161, 161);
+}
+
+.cont4{
+  width: 100%;
+  margin-top: 110px;
+  height:500px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.cont4_livo{
+  float: left;
+  width: 33.33%;
+  height: 500px;
+  position: absolute;
+  word-break: break-word;
+}
+
+.cont4_middle{
+  margin-left:33.33%;
+  height: 500px;
+  width: 33.33%;
+  position: absolute;
+  word-break: break-word;
+  border-style: solid;
+  border-bottom: white;
+  border-top: white;
+}
+
+.cont4 aside{
+  width: 33.33%;
+  height: 500px;
+  float:right;
+  position: relative;
+  word-break: break-word;
+}
+
+.cont5{
+  margin-top: 160px;
+  height: 600px;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px #000000;
+  opacity: 0.95;
+}
+
+.cont5 div p{
+  position: absolute;
+  padding-top: 22.5%;
+}
+
+.more_button{
+  background-color:orange;
+  padding-right: 20px;
+  border-radius: 7%;
+  transition: all .2s ease-in-out;
+}
+
+.more_button:link , .more_button:hover , .more_button:visited , .more_button:active{
+  text-decoration: none;
+}
+
+.more_button a:link , .more_button a:hover{
+  text-decoration: none;
+}
+
+.more_button:hover{
+  transform: scale(1.1);
+}
+
+.cont6{
+  height: 600px;
+  margin-top:100px;
+  position: relative;
+}
+
+.cont6 p{
+  float: right;
+  width: 38.5%;
+}
+
+.cont7{
+  height: 600px;
+  margin-top:110px;
+  position: relative;
+}
+
+.cont7 aside{
+  width:29%;
+  float:right;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  header .nav_bar .menu_box{
+    margin-right:20%;
+  }
+
+  .parallax h1{
+    font-size: 30px;
+    padding-top: 50%;
+  }
+
+  .cont1 h1{
+    font-size: 25px;
+  }
+
+  .cont2 {
+    height:100%;
+  }
+  
+  .cont2_nav {
+    width: 100%;
+    padding-top: 80%;
+  }
+
+  .cont3 .cont3_desni{
+    padding-top: 60%;
+  }
+
+  .cont3 img{
+    position: absolute;
+  }
+
+  .cont3 div{
+    width: 100%;
+  }
+  
+  .cont4{
+    height:100%;
+  }
+
+  .cont4 .cont4_livo {
+    width: 100%;
+    position: relative;
+    border-style: none;
+  }
+    
+  .cont4 .cont4_middle {
+    width: 100%;
+    position: relative;
+    border-style: none;
+    margin-top:5%;
+    float:right;
+  }
+
+  .cont4 aside {
+    width: 100%;
+    position: relative;
+    border-style: none;
+    margin-top:10%;
+  }
+
+  .cont7 img {
+    width: 100%;
+    position:absolute;
+  }
+
+  .cont7 aside{
+    width: 100%;
+    position: relative;
+    margin-top: 65%;
+  }
+
+  .cont5 div p{
+    margin-top:30%
+  }
+
+  .cont5 div button{
+    margin-left: 70%;
+  }
+
+ .cont6 img{
+  width: 100%;
+  position: absolute;
+
+ }
+
+ .cont6 p{
+  width: 100%;
+  position: relative;
+  padding-top: 62%;
+}
+
+}

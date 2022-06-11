@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šibenik Tourism</title>
+    <link rel="stylesheet" href="CopicMatej_Seminar_CSS.css">
+    <link rel="stylesheet" href="CopicMatej_Seminar_CSS_Slideshow.css">
+    <link rel="stylesheet" href="CopicMatej_Seminar_CSS_Footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    
+     <header id="top" style="padding-top:80px ;">       
+        <nav class="nav_bar"> 
+            <div class="menu_box">
+                <div class="dropdown">
+                    <button>  <span class="glyphicon glyphicon-align-justify"></span>
+                        <div class="dropdown-content">
+                            <a href="#hotels"><span class="glyphicon glyphicon-bed"></span></a>
+                            <a href="#restoran"><span class="glyphicon glyphicon-cutlery"></span></a>
+                            <a href="#sights"><span class="glyphicon glyphicon-eye-open"></span></a>
+                            <a href="#night"><span class="glyphicon glyphicon-glass"></span></a>
+                        </div>
+                    </button>
+                </div>
+            </div> 
+            <p1 style="color:orange;"> Šibenik </p1> 
+            <br> 
+            <p1 style="color:rgb(4, 161, 161);"> The city is the stage </p1>
+
+        </nav>
+    </header>
+
+    <div class="parallax">
+        <img src="file:///C:/Users/Matej/Desktop/Faks/Web%20sucelja/Seminar_PWKS/coverPic.jpg" style="width:100%;" alt="Cover_Picture">
+        <h1> Visit Šibenik </h1> 
+    </div>
+    
+    <section class="cont1"> 
+        <h1> Welcome to Šibenik </h1>
+    </section>
+
+    <section id="hotels" class="cont2">
+        <nav class="cont2_nav">
+            <h1  style="color:orange;font-size: 35px;font-weight: bolder;"> Accommodation in Šibenik </h1>
+            <br>
+            <h2 style="color:rgb(4, 161, 161);font-size:20px;text-shadow:0.5px 0.5px aqua;">
+                There is a huge variety of hotels and other 
+                <br> accommodation in Šibenik. They range from smaller
+                <br> and cheaper hotels and apartments to big
+                <br> luxurious and expenisve villas.
+                <br> Some of the best hotels are:
+                <br> Hotel Jadran , Hotel Andrija
+                <br> Hotel D-resort and many more.
+            </h2>
+
+            <br><br>
+            <br><br>
+            <br><br>
+
+            <button class="more_button"> <a href="https://www.booking.com/city/hr/sibenik.hr.html?aid=333365;label=sibenik-sj_A6BUolVfauG66LMWUbgS553229407651:pl:ta:p1420:p2260,000:ac:ap:neg:fi:tikwd-11100253156:lp1007619:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YboIMJYQAPicltiwyR-Bd14;ws=&gclid=CjwKCAjwtIaVBhBkEiwAsr7-c9vkXJFswM5SDf1YFa5t-7wsx93IM9drJgfrifppSrRgBLuR6uD-zRoCfNsQAvD_BwE"><p1 style="color:black;font-size: 20px;margin-left:20px"> More... </p1> </a> </button>
+
+        </nav>
+       
+        <aside class="cont2_aside">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="hotel1.jpg" style="width:100%" alt="Hotel_Jadran">
+                  <div class="text">Hotel Jadran</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="hotel2.jpg" style="width:100%" alt="Hotel_Andrija">
+                  <div class="text">Hotel Andrija</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="hotel3.jpg" style="width:100%" alt="Hotel_D-resort">
+                  <div class="text">Hotel D-resort</div>
+                </div>
+                
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000);
+                }
+            </script>
+        </aside>
+    </section>
+
+
+    <section id="restoran" class="cont3">
+
+        <div style="width:69.8%;float: left;">
+            <img src="file:///C:/Users/Matej/Desktop/Faks/Web%20sucelja/Seminar_PWKS/restoran.jpg" style="width: 100%;" alt="Restaraunt_Pelegrini">
+        </div>
+
+        <div class="cont3_desni">
+            <p1 style="color:orange;font-weight:bolder;font-size: 40px;">Food in Šibenik</p1>
+            <br>
+            <p>
+                Food in šibenik is varied and widespread.
+                From the freshly caught fish  and clams to the delicious local meats of all kinds.
+                Šibenik is also home to one of the most famous and one of the only restaraunts
+                in Croatia that have a michellin star, Pelegrini. Aside from the expensive and
+                busy restaraunts, there are also a lot of mom and pop type shops that have a taste of their own.
+                <br><br><br><br><br>
+                <button class="more_button" style="margin-left:20px;"> <a href="https://pelegrini.hr"><p1 style="color:black;font-size: 20px;margin-left:20px"> More... </p1> </a> </button>
+            </p>
+
+            <br><br>
+            <br><br>
+        </div>
+    </section>
+
+    <br><br>
+    <br><br>
+
+    <p style="text-align: center;font-size: 35px;color:orange;margin-top: 100px;font-weight: bolder;"> Sights in Šibenik </p>
+
+    <section id="sights" class="cont4">
+        <section class="cont4_livo">
+            <img src="tvrdava1.jpg" style="max-width: 100%;" alt="Fort_St.Nicholas">
+            <a href="https://www.kanal-svetog-ante.com/hr/posjet-tvrdavi-sv-nikole/informacije-o-tvrdavi"> <h1 style="color:orange;font-weight: bolder;font-size: 25px;text-align: center;"> Fortress of St. Nicholas </h1> </a>
+            <p style="color:rgb(4, 161, 161);text-align: center;font-size: 17px;padding-left: 5px;padding-right: 5px;"> Fortress of St. Nikola is a unique monument of world architectural heritage that was inscribed on the UNESCO World Heritage List in 2017. To get to the fortress you use a local ferry that goes from the main coastline of Šibenik </p>
+        </section>
+
+        <section class="cont4_middle">
+            <img src="tvrdava2.jpg" style="max-width: 100%;" alt="Fort_St.Michael">
+            <a href="https://www.tvrdjava-kulture.hr/hr/tvrdava-sv-mihovila/bastina/"> <h1 style="color:orange;font-weight: bolder;font-size: 25px;text-align: center;"> Fortress of St. Michael </h1> </a>
+            <p style="color:rgb(4, 161, 161);text-align: center;font-size: 17px;padding-left: 5px;padding-right: 5px;"> Fortress of St. Mihovila is located in a convenient position at the foot of which medieval Šibenik developed.Archaeological finds suggest that it has provided protection to the local population since Illyrian times. Today , concerts are held on the top of the fortress </p>
+        </section>
+        
+        <aside>
+            <img src="tvrdava3.jpg" style="max-width: 100%;" alt="Fort_Barone">
+            <a href="https://www.tvrdjava-kulture.hr/hr/tvrdava-barone/za-posjetitelje/"> <h1 style="color:orange;font-weight: bolder;font-size: 25px;text-align: center;"> Fortress Barone </h1> </a>
+            <p style="color:rgb(4, 161, 161);text-align: center;font-size: 17px;padding-left: 5px;padding-right: 5px;"> Barone Fortress It is located 90 meters above the sea on a hill formerly called Vidakuša. The need to build a fortress on the hills above Šibenik was emphasized by many city princes during the 16th and 17th centuries. Today , the fortress has been renovated and there is a caffe and a small park where people come , relax and enjoy the views. </p>
+        </aside>
+    </section>
+    
+    <br>
+
+    <section class="cont7">
+
+        <div style="width:69.8%;float:left">
+            <img src="file:///C:/Users/Matej/Desktop/Faks/Web%20sucelja/Seminar_PWKS/katedrala.jpg" alt="St.Jacobs_Catedral" style="width: 100%;border-bottom-right-radius: 10%;border-top-right-radius: 10%;">
+        </div>
+
+        <aside style="color:rgb(4, 161, 161);font-size: 18px;">
+
+            <p>
+                <br>
+                Cathedral of St. Jakov in Šibenik is one of the most significant and beautiful architectural achievements in Croatia and in 2000 it was included in the UNESCO list of world cultural heritage.
+                It was built for more than a hundred years, during the 15th and 16th centuries, and is unique in that it is completely built of stone without the use of binder.During the century-long period of construction, the cathedral was created by changing three different styles: Gothic, Gothic-Renaissance and Renaissance. T
+                he beauty of the imposing dome, which was hit in the Homeland War, and today is a kind of symbol of Šibenik, stands out with its beauty.
+                <br><br>
+                <button class="more_button" style="margin-left:10px;"> <a href="https://www.sibenik-tourism.hr/lokacije/katedrala-sv-jakova/1.html"><p1 style="color:black;font-size: 20px;margin-left:20px"> More... </p1> </a> </button>
+            </p>
+
+            <br><br>
+            <br><br>
+            <br><br>
+            
+
+        </aside>
+
+    </section>
+
+    <br><br><br><br>
+    
+    <section class="cont5">
+
+        <div>
+            <img src="file:///C:/Users/Matej/Desktop/Faks/Web%20sucelja/Seminar_PWKS/krka.jpg" style="width: 100%;position: absolute;" alt="National-Park_Krka">
+            <p style="color:orange;font-size: 50px;font-weight: bolder;"> National Park Krka </p>
+            <br><br><br><br><br><br><br><br><br>
+            <p style="color:rgb(4, 161, 161);font-size: 25px;font-weight: bolder;text-shadow: 2px 2px #000000;"> One of 8 most<br>beautiful sights in Croatia.<br>The Krka Waterfalls </p>
+            
+            <br><br>
+           
+            <button class="more_button" style="margin-left:10px;position: absolute;margin-top: 40%;margin-left: 60%;"> <a href="https://www.np-krka.hr"><p1 style="color:black;font-size: 20px;margin-left:20px"> More... </p1> </a> </button>
+        </div>
+
+    
+    </section>
+
+    <p id="night" style="color:orange;font-weight: bolder;font-size: 35px;text-align: center;margin-top:100px"> Nightlife in Šibenik </p>
+
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <section class="cont6">
+        <div style="width:61.2%;float: left;">
+            <img src="file:///C:/Users/Matej/Desktop/Faks/Web%20sucelja/Seminar_PWKS/night.jpg" alt="Nightlife_Picture" style="border-top-right-radius:10%;border-bottom-right-radius:10%;width:100%;">   
+        </div> 
+
+        <p style="color:rgb(4, 161, 161);font-size:20px;margin-top: 30px;"> 
+                Nightlife in Šibenik during the summer takes place on the terraces of the citys cafes and bars among the narrow 
+                streets and open squares. So, join in and mingle with the locals. If youre looking for larger crowds — of the 
+                clubbing type — attend one of the festivals in the city or surrounding area that offer plenty of different musical genres 
+                and opportunities to hang out with locals and tourists alike .
+                <button class="more_button" style="margin-left:250px;margin-top: 30px;"> <a href="https://www.inyourpocket.com/sibenik/Nightlife"><p1 style="color:black;font-size: 20px;margin-left:20px"> More... </p1> </a> </button>
+        </p>
+        
+    </section>
+
+    <br><br>
+    <br><br>
+    
+
+    <div style="text-align:center;padding-top:75px ;">
+        <button>
+            <a href="#top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        </button>
+    </div>
+
+    <br><br>
+    <br><br>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Makers</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Q ticket</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sources</h4>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <div>
+                        <form>
+                            <input type="text" name="email" placeholder="Enter your Email...">
+                            <input type="submit"  placeholder="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+</body>
+</html>
